@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URL, {
 }).then(console.log("Connected to MongoDB"))
     .catch((err) => console.log(err));
 
-    //Cors
+//Cors
 
 const corsOptions = {
     origin: process.env.ALLOWED_CLIENTS.split(',')
