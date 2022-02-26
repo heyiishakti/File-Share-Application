@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URL, {
     //Cors
 
 const corsOptions = {
-        origin: process.env.ALLOWED.CLIENTS.split('.')
+    origin: process.env.ALLOWED_CLIENTS.split(',')
 }
 app.use(cors(corsOptions));
 
